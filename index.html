@@ -2,137 +2,98 @@
 <html lang="th">
 <head>
 <meta charset="UTF-8">
+<title>ฉัตรียา คอนโดเทล</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Chattriya Condotel</title>
 
 <style>
 
 body{
 margin:0;
-font-family:Arial;
+font-family:sans-serif;
 background:#f4f4f4;
 }
 
-nav{
-background:#1f3a2c;
+header{
+background:#0d3b66;
 color:white;
-padding:15px 40px;
-display:flex;
-justify-content:space-between;
-align-items:center;
+padding:20px;
+text-align:center;
+}
+
+nav{
+background:#1d6fa5;
+padding:10px;
+text-align:center;
 }
 
 nav a{
 color:white;
-margin-left:20px;
+margin:15px;
 text-decoration:none;
-font-weight:bold;
+font-size:18px;
 }
 
 .hero{
-height:80vh;
-background:url("hero.jpg") center/cover no-repeat;
+background:url('https://images.unsplash.com/photo-1566073771259-6a8506099945');
+height:400px;
+background-size:cover;
 display:flex;
-flex-direction:column;
-justify-content:center;
 align-items:center;
+justify-content:center;
 color:white;
-text-shadow:0 2px 10px rgba(0,0,0,0.6);
+font-size:40px;
+font-weight:bold;
 }
 
-.hero h1{
-font-size:50px;
-margin:0;
-}
-
-.hero p{
-font-size:22px;
-}
-
-.section{
-max-width:1100px;
+.container{
+padding:40px;
+max-width:1200px;
 margin:auto;
-padding:60px 20px;
 }
 
 .rooms{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+gap:20px;
 }
 
-.card{
+.room{
 background:white;
 border-radius:10px;
-box-shadow:0 5px 20px rgba(0,0,0,0.1);
-overflow:hidden;
-}
-
-.card img{
-width:100%;
-height:200px;
-object-fit:cover;
-}
-
-.card div{
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
 padding:20px;
 }
 
+.room img{
+width:100%;
+border-radius:10px;
+}
+
 .price{
-color:#1f3a2c;
+color:#e63946;
 font-size:22px;
 font-weight:bold;
 }
 
-.features{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
-}
-
-.feature{
-background:white;
-padding:20px;
-border-radius:10px;
-text-align:center;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.gallery img{
-width:100%;
-border-radius:10px;
-}
-
 .contact{
-background:#1f3a2c;
+background:#0d3b66;
 color:white;
+padding:40px;
 text-align:center;
-padding:50px;
 }
 
 .button{
-background:white;
-color:#1f3a2c;
-padding:12px 20px;
-border-radius:6px;
-text-decoration:none;
-font-weight:bold;
-margin-top:10px;
 display:inline-block;
+padding:12px 20px;
+background:#25D366;
+color:white;
+text-decoration:none;
+border-radius:5px;
+margin-top:10px;
 }
 
-footer{
-background:#111;
-color:white;
-text-align:center;
-padding:20px;
+.map{
+margin-top:30px;
 }
 
 </style>
@@ -140,118 +101,88 @@ padding:20px;
 
 <body>
 
-<nav>
-<div><b>Chattriya Condotel</b></div>
+<header>
+<h1>ฉัตรียา คอนโดเทล</h1>
+<p>ห้องพักรายเดือน ในเมืองฉะเชิงเทรา</p>
+</header>
 
-<div>
+<nav>
+<a href="#home">หน้าแรก</a>
 <a href="#rooms">ห้องพัก</a>
-<a href="#facilities">สิ่งอำนวยความสะดวก</a>
-<a href="#gallery">รูปภาพ</a>
 <a href="#contact">ติดต่อ</a>
-</div>
 </nav>
 
 <section class="hero">
-<h1>ฉัตรียา คอนโดเทล</h1>
-<p>ห้องพักรายเดือน ในจังหวัดฉะเชิงเทรา</p>
-<p>ราคาเริ่มต้น 3,000 บาท</p>
+ยินดีต้อนรับสู่ ฉัตรียา คอนโดเทล
 </section>
 
-<section id="rooms" class="section">
+<div class="container">
 
-<h2>ประเภทห้องพัก</h2>
+<h2>ห้องพักของเรา</h2>
 
 <div class="rooms">
 
-<div class="card">
-<img src="room3000.jpg">
-<div>
+<div class="room">
+<img src="https://images.unsplash.com/photo-1631049552240-59c37f38802b">
 <h3>ห้องมาตรฐาน</h3>
-<p class="price">3,000 บาท / เดือน</p>
-<p>แอร์ เตียง ห้องน้ำส่วนตัว</p>
-</div>
-</div>
-
-<div class="card">
-<img src="room5000.jpg">
-<div>
-<h3>ห้องขนาดกลาง</h3>
-<p class="price">5,000 บาท / เดือน</p>
-<p>เฟอร์นิเจอร์ครบ</p>
-</div>
+<p class="price">3000 บาท / เดือน</p>
+<p>ห้องพักสะอาด พร้อมเฟอร์นิเจอร์พื้นฐาน</p>
 </div>
 
-<div class="card">
-<img src="room10000.jpg">
-<div>
-<h3>ห้องใหญ่</h3>
-<p class="price">10,000 บาท / เดือน</p>
-<p>พื้นที่กว้าง</p>
-</div>
+<div class="room">
+<img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c">
+<h3>ห้องพิเศษ</h3>
+<p class="price">5000 บาท / เดือน</p>
+<p>ห้องพักขนาดใหญ่ พร้อมสิ่งอำนวยความสะดวก</p>
 </div>
 
-<div class="card">
-<img src="room15000.jpg">
-<div>
-<h3>ห้องชุด / บ้าน 2 ชั้น</h3>
-<p class="price">15,000 บาท / เดือน</p>
-<p>เหมาะสำหรับครอบครัว</p>
+<div class="room">
+<img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39">
+<h3>ห้องชุด</h3>
+<p class="price">10000 บาท / เดือน</p>
+<p>ห้องชุดขนาดใหญ่ พร้อมเฟอร์นิเจอร์ครบ</p>
 </div>
+
+<div class="room">
+<img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6">
+<h3>บ้านพิเศษ 2 ชั้น</h3>
+<p class="price">15000 บาท / เดือน</p>
+<p>บ้าน 2 ชั้น พร้อมเฟอร์นิเจอร์ครบ</p>
 </div>
 
 </div>
 
-</section>
-
-<section id="facilities" class="section">
-
-<h2>สิ่งอำนวยความสะดวก</h2>
-
-<div class="features">
-
-<div class="feature">WiFi ฟรี</div>
-<div class="feature">แอร์ทุกห้อง</div>
-<div class="feature">ที่จอดรถ</div>
-<div class="feature">อุปกรณ์ออกกำลังกาย</div>
-<div class="feature">ห้องต้อนรับ</div>
-
 </div>
 
-</section>
+<div class="contact" id="contact">
 
-<section id="gallery" class="section">
+<h2>ติดต่อเรา</h2>
 
-<h2>บรรยากาศสถานที่</h2>
+<p>📞 โทร: 0868742847</p>
 
-<div class="gallery">
-
-<img src="place1.jpg">
-<img src="place2.jpg">
-<img src="place3.jpg">
-<img src="place4.jpg">
-
-</div>
-
-</section>
-
-<section id="contact" class="contact">
-
-<h2>ติดต่อจองห้อง</h2>
-
-<p>โทร 086-874-2847</p>
+<p>📍 ที่อยู่</p>
 
 <p>
-294 ม.2 ต.หน้าเมือง  
-อ.เมืองฉะเชิงเทรา 24000
+294 ฉัตรียาคอนโดเทล ม.2 ต.หน้าเมือง  
+อ.เมืองฉะเชิงเทรา  
+ถ.ศุขประยูร  
+Chachoengsao 24000
 </p>
 
-<a class="button" href="tel:0868742847">โทรตอนนี้</a>
+<a class="button" href="#">ติดต่อ LINE</a>
 
-</section>
+<div class="map">
 
-<footer>
-© Chattriya Condotel
-</footer>
+<iframe
+src="https://maps.google.com/maps?q=Chachoengsao&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%"
+height="300"
+style="border:0;">
+</iframe>
+
+</div>
+
+</div>
 
 </body>
 </html>
